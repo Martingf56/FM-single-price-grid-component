@@ -1,0 +1,152 @@
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --lightCyan: hsl(179, 47%, 52%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+    --backgroundColor: hsl(205, 42%, 91%);
+    
+    --font-size: 16px;
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 71px 32px;
+    padding-bottom: 0;
+
+    font-family: 'Karla', sans-serif;
+    font-size: var(--font-size);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--backgroundColor);
+}
+
+/*Desing width Mobile First*/
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+
+    width: 311px;
+}
+
+.card-top {
+    padding: 25px;
+    height: 33.33%;
+}
+
+.card-top h2 {
+    color: var(--cyan);
+    font-size: 21px;
+}
+
+.card-top h3 {
+    color: var(--brightYellow);
+    font-size: 17px;
+}
+
+.card-top p {
+    color: var(--grayishBlue);
+    font-size: 15px;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card-bottom-left {
+    flex: 1;
+    background-color: var(--cyan);
+    color: white;
+    padding: 10px 26px;
+}
+
+.card-bottom-left-price {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.card-bottom-left-perMonth {
+    color: var(--lightGray);
+}
+
+.card-bottom-left button{
+    width: 100%;
+    background-color: var(--brightYellow);
+    border: 0;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 5px rgba(63, 63, 63, 0.6);
+}
+
+
+.card-bottom-right {
+    flex: 1;
+    background-color: var(--lightCyan);
+    color: var(--lightGray);
+    padding: 10px 26px;
+
+    border-radius: 0 0 8px 8px;
+}
+
+.card-bottom-right h4 {
+    color: white;
+    font-size: var(--font-size);
+}
+
+.card-bottom-right p {
+    font-size: 15px;
+}
+
+.attribution {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (min-width: 380px) {
+    .card {
+        width: 635px !important;
+    }
+
+    .card-top {
+        padding: 25px 55px 25px 40px;
+    }
+
+    .card-bottom {
+        flex-direction: row;
+    }
+
+    .card-bottom-right {
+        padding: 25px 40px;
+        border-radius: 0 0 8px 0;
+    }
+
+    .card-bottom-left {
+        padding: 25px 40px;
+        border-radius: 0 0 0 8px;
+    }
+}
