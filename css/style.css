@@ -14,11 +14,11 @@
 html {
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 body {
-    padding: 71px 32px;
-    padding-bottom: 0;
+    height: 100vh;
 
     font-family: 'Karla', sans-serif;
     font-size: var(--font-size);
@@ -31,7 +31,7 @@ body {
     background-color: var(--backgroundColor);
 }
 
-/*Desing width Mobile First*/
+/*Mobile First*/
 
 .card {
     background-color: white;
