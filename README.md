@@ -2,6 +2,14 @@
 
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
+## My Solution
+Can check the solution [here.](https://www.frontendmentor.io/solutions/mobile-first-site-css-and-html-5YyrrbKcv)
+
+![Solution of the challenge on web](./images/webSolution.png)
+
+
+![Solution of the challenge on mobile](./images/mobileSolution.png)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
